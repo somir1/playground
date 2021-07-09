@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin 0;
+            padding 0;
+        }
+
+        .welcome {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .maincontainer {
+            display: flex;
+            justify-content: center;
+            min-width: 40%;
+        }
+
+        .box {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            gap: 3.5em;
+        }
+
+        .boxxes {
+            width: 70px;
+            height: 70px;
+            background-color: {{colors}};
+            border: 2px solid black;
+            display: flex;
+        }
+
+    
+    </style>
+    <title>Playground 1</title>
+</head>
+
+<body>
+    <div class="welcome">
+        <h1>Welcome!</h1>
+    </div>
+    <div class="maincontainer">
+        <div class="box">
+            {%for i in range(0,copy):%}
+            <div class="boxxes"></div>
+            {%endfor%}
+
+        </div>
+    </div>
+</body>
+
+</html>
